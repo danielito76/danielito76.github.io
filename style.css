@@ -4,12 +4,26 @@ body {
   justify-content: center;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
+html {
+	scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 .container {
   max-width: 1440px;
   padding: 50px 50px 10px 50px;
   margin-top: 0px;
 }
+
+
+section {
+  padding-top: 60px;
+}
+
 
 .logo {
   max-width:150px;
@@ -30,8 +44,6 @@ h2 {
   text-align: center;
 }
 
-
-/* navbar */
 
 /* The navigation bar */
 .navbar {
@@ -63,13 +75,20 @@ h2 {
   color: black;
 }
 
-/* Main content */
+
+/* Add a top margin to avoid content overlay */
+/* Main content
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
+  margin-top: 30px;
+} */
 
 
-/* Left arroow navigator */
+/* navbar */
+
+
+
+
+/* Left arrows navigator */
 #arrow_nav {
     height: 114px;
     width: 34px;
@@ -86,3 +105,17 @@ h2 {
 #arrow_nav svg {
     fill: rgba(0, 0, 0, 0.2);
 }
+
+#arrow_nav svg {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#arrow_nav svg:hover {
+    fill: rgba(0, 0, 0, 1);
+}
+
+
+
+
+/* Left arrows navigator */
