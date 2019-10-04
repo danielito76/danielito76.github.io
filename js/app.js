@@ -1,74 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-
-//   $('.js-scroll-to').click(function(e) {
-//
-// 	target = $($(this).attr('href'))
-//
-//     if (target.offset()) {
-//       $('html, body').animate({scrollTop: target.offset().top + 'px'}, 600)
-//     }
-//
-//     e.preventDefault()
-//   })
-//
-//
-//
-//   $('.js-next').click(function(e) {
-//
-//     var selected = $('.js-list-item.js-current-panel')
-//     var anchors = $('.js-list-item')
-//
-//     var pos = anchors.index(selected)
-//     var next = anchors.get(pos+1)
-//     var prev = anchors.get(pos-1)
-//
-//     target = $(next)
-//
-//     $(selected).removeClass('js-current-panel')
-//     $(next).addClass('js-current-panel')
-//
-//     if (target.offset()) {
-//       $('html, body').animate({scrollTop: target.offset().top + 'px'}, 600)
-//     }
-//
-//
-//     e.preventDefault()
-//   })
-//
-//
-//
-//
-//
-//
-//
-//   $('.js-prev').click(function(e) {
-//
-//     var selected = $('.js-list-item.js-current-panel')
-//     var anchors = $('.js-list-item')
-//
-//     var pos = anchors.index(selected)
-//     var next = anchors.get(pos+1)
-//     var prev = anchors.get(pos-1)
-//
-//     target = $(prev)
-//
-//     $(selected).removeClass('js-current-panel')
-//     $(prev).addClass('js-current-panel')
-//
-//     if (target.offset()) {
-//       $('html, body').animate({scrollTop: target.offset().top + 'px'}, 600)
-//     }
-//
-//
-//     e.preventDefault()
-// })
-
   function goToNextAnchor() {
     const hash = window.location.hash.substr(1)
-    if (hash === 'about') {
+    if (hash === '') {
+      location.hash = '#about'
+      // console.log('ok')
+    } if (hash === 'about') {
       location.hash = '#experience'
+      // console.log('ok')
+    } if (hash === 'experience') {
+      location.hash = '#skills'
+      // console.log('ok')
+    } if (hash === 'skills') {
+      location.hash = '#projects'
+      // console.log('ok')
+    } if (hash === 'projects') {
+      location.hash = '#contact'
+      // console.log('ok')
+    }
+  }
+
+  function goToPrevAnchor() {
+    const hash = window.location.hash.substr(1)
+    if (hash === 'contact') {
+      location.hash = '#projects'
+      // console.log('ok')
+    } if (hash === 'projects') {
+      location.hash = '#skills'
+      // console.log('ok')
+    } if (hash === 'skills') {
+      location.hash = '#experience'
+      // console.log('ok')
+    } if (hash === 'experience') {
+      location.hash = '#about'
+      // console.log('ok')
+    } if (hash === 'about') {
+      location.hash = ''
       // console.log('ok')
     }
   }
@@ -77,11 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  //
-  // function goToNextAnchor2() {
-  //   alert('click workssss')
-  //   console.log(window.location.hash.substr(1))
-  // }
 
 
 
@@ -90,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-  document.getElementById('next_entry2').addEventListener('click', goToNextAnchor)
+  document.getElementById('next_entry').addEventListener('click', goToNextAnchor)
+  document.getElementById('prev_entry').addEventListener('click', goToPrevAnchor)
 
 
 
