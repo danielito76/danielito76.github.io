@@ -1,6 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
+  // function openCloseBurgerMenu() {
+  //   var x = document.getElementById('myLinks')
+  //   if (x.style.display === 'block') {
+  //     x.style.display = 'none'
+  //   } else {
+  //     x.style.display = 'block'
+  //   }
+  // }
+
+
+
+
+
   function goToNextAnchor() {
     const hash = window.location.hash.substr(1)
     if (hash === '') {
@@ -55,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('next_entry').addEventListener('click', goToNextAnchor)
   document.getElementById('prev_entry').addEventListener('click', goToPrevAnchor)
+  // document.getElementById('burgerMenu').addEventListener('click', openCloseBurgerMenu)
+
+
 
 
 

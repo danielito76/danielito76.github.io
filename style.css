@@ -1,7 +1,6 @@
 body {
+  height: 100%;
   background-color: #dddddd;
-  display: flex;
-  justify-content: center;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
 html {
@@ -14,23 +13,53 @@ html {
 }
 
 .container {
-  /* max-width: 1440px; */
-  max-width: 800px;
-  padding: 50px 50px 10px 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* padding: 50px 50px 10px 50px; */
+  padding-top: 50px;
   margin-top: 0px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+}
 
-section h2 {
-  padding-top: 60px;
+@media screen and (min-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
+  }
+}
+
+
+
+
+
+header {
+  width: 100%;
+}
+
+
+section {
+  padding: 60px 40px 60px 40px;
+  text-align: center;
 }
 section h2 {
   color: #d3222c;
 }
 
 
-.logo {
-  max-width:150px;
+
+#logo {
+  width: 40%;
   height:auto;
   display: block;
   margin-left: auto;
@@ -39,8 +68,14 @@ section h2 {
   margin-top: 50px;
 }
 
+@media only screen and (min-width: 600px) {
+  #logo {
+    width: 27%;
+  }
+}
+
 img {
-  max-width:800px;
+  max-width:50%;
   height:auto;
 }
 
@@ -49,54 +84,120 @@ h2 {
 }
 
 
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
+.topnavContainer {
   display: flex;
   justify-content: center;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed;  /* Set the navbar to fixed position */
+  top: 0;  /* Position the navbar at the top of the page */
+  left: 0;
+  min-height: 50px;
+   width: 100%;  /* Full width */
+   background-color: #333;
 }
 
-/* Links inside the navbar */
-.navbar a {
-  /* float: left;
-  display: block; */
-  /* display: inline-block;
-  margin-left: auto;
-  margin-right: auto; */
+@media screen and (max-width: 600px) {
+  .topnavContainer {
+    display: flex;
+    justify-content: flex-start;
+     background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+
+
+/* navigation bar */
+.topnav {
+  position: fixed;  /* Set the navbar to fixed position */
+  top: 0;  /* Position the navbar at the top of the page */
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  margin: auto;
+  float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
 }
 
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-/* Add a top margin to avoid content overlay */
-/* Main content
-.main {
-  margin-top: 30px;
-} */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+  }
+}
+/* navigation bar */
 
 
-/* navbar */
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* Left arrows navigator */
+
+.sideContent {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+@media screen and (min-width: 600px) {
+  .sideContent {
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+  }
+}
+
+
+
 #arrow_nav {
     height: 114px;
     width: 34px;
-    margin: -78px 0 0 20px;
+    /* margin: -78px 0 0 200px; */
     position: fixed;
     z-index: 9999;
     top: 50%;
@@ -111,15 +212,12 @@ h2 {
 }
 
 #arrow_nav svg {
-  -webkit-transition-duration: 0.4s; /* Safari */
+-webkit-transition-duration: 0.4s;    /* Safari */
   transition-duration: 0.4s;
 }
 
 #arrow_nav svg:hover {
     fill: rgba(0, 0, 0, 1);
 }
-
-
-
 
 /* Left arrows navigator */

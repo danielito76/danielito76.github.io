@@ -2,33 +2,103 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Daniele Nocito developer</title>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,500,600,700,800&display=swap" rel="stylesheet">
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
 
-    <div class="navbar">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+
+    <div class="topnavContainer">
+      <div class="topnav" id="myTopnav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
     </div>
 
+
+
+
     <div class="container">
+
+
+      <div class="sideContent">
+        <div id="arrow_nav">
+          <a href="#">
+            <svg viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16329,1,1,8.16363,1,17.00005C1,25.83666,8.16328,33,16.99976,33C25.83661,33,33,25.83665,33,17.00005
+                C33,8.16363,25.83661,1,16.99976,1z M23.15434,15.70823l-0.85372,0.87094c-0.04537,0.04536-0.10485,0.06814-0.16452,0.06814
+                c-0.05985,0-0.11953-0.02278-0.16508-0.06814l-4.89215-4.89241l-0.13708-0.13708l-5.02942,5.02949
+                c-0.04367,0.04339-0.10277,0.06814-0.1648,0.06814c-0.06202,0-0.12131-0.02475-0.16508-0.06814l-0.87009-0.85946
+                c-0.0912-0.09082-0.0912-0.23839,0-0.32978l6.05481-6.01543c0.04433-0.04442,0.10597-0.06616,0.16762-0.06513
+                c0.06494-0.00489,0.1312,0.01534,0.18127,0.06513l6.03825,6.00395c0.04367,0.04339,0.06823,0.10287,0.06823,0.16489
+                C23.22256,15.60489,23.19802,15.66456,23.15434,15.70823z M23.15434,22.9999l-0.85372,0.87094
+                c-0.04537,0.04536-0.10485,0.06814-0.16452,0.06814c-0.05985,0-0.11953-0.02278-0.16508-0.06814l-4.89215-4.89241l-0.13708-0.13708
+                l-5.02942,5.02949c-0.04367,0.04339-0.10277,0.06814-0.1648,0.06814c-0.06202,0-0.12131-0.02475-0.16508-0.06814l-0.87009-0.85946
+                c-0.0912-0.09082-0.0912-0.23839,0-0.32978l6.05481-6.01543c0.04433-0.04442,0.10597-0.06616,0.16762-0.06513
+                c0.06494-0.00489,0.1312,0.01534,0.18127,0.06513l6.03825,6.00395c0.04367,0.04339,0.06823,0.10287,0.06823,0.16489
+                C23.22256,22.89656,23.19802,22.95623,23.15434,22.9999z"></path>
+            </svg>
+            </a>
+
+          <a id="prev_entry">
+            <svg viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16327,1,1,8.16364,1,17.00006C1,25.83667,8.16327,33,16.99976,33C25.83661,33,33,25.83667,33,17.00006
+                C33,8.16364,25.83661,1,16.99976,1z M23.70233,15.6925l-0.91974,0.93835c-0.04889,0.04883-0.11292,0.07336-0.17725,0.07336
+                c-0.06445,0-0.12878-0.02454-0.17786-0.07336l-4.39276-4.39307v12.96448h-2.01465V12.20123l-4.4295,4.42963
+                c-0.04706,0.04669-0.11072,0.07336-0.17755,0.07336s-0.13074-0.02667-0.17786-0.07336l-0.93744-0.92596
+                c-0.09821-0.09784-0.09821-0.25684,0-0.35535l6.52332-6.48077c0.04773-0.04785,0.1142-0.07129,0.1806-0.07019
+                c0.06995-0.00525,0.14136,0.01648,0.19531,0.07019l6.50537,6.46844c0.04712,0.04675,0.07361,0.11084,0.07361,0.17767
+                C23.77582,15.58118,23.74945,15.64545,23.70233,15.6925z"></path>
+            </svg>
+          </a>
+
+          <a id="next_entry">
+            <svg class="next_entry" viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16327,1,1,8.16364,1,17.00006C1,25.83667,8.16327,33,16.99976,33C25.83661,33,33,25.83667,33,17.00006
+                C33,8.16364,25.83661,1,16.99976,1z M23.70233,15.6925l-0.91974,0.93835c-0.04889,0.04883-0.11292,0.07336-0.17725,0.07336
+                c-0.06445,0-0.12878-0.02454-0.17786-0.07336l-4.39276-4.39307v12.96448h-2.01465V12.20123l-4.4295,4.42963
+                c-0.04706,0.04669-0.11072,0.07336-0.17755,0.07336s-0.13074-0.02667-0.17786-0.07336l-0.93744-0.92596
+                c-0.09821-0.09784-0.09821-0.25684,0-0.35535l6.52332-6.48077c0.04773-0.04785,0.1142-0.07129,0.1806-0.07019
+                c0.06995-0.00525,0.14136,0.01648,0.19531,0.07019l6.50537,6.46844c0.04712,0.04675,0.07361,0.11084,0.07361,0.17767
+                C23.77582,15.58118,23.74945,15.64545,23.70233,15.6925z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+       <div class="content">
 
       <header>
         <h2>Daniele Nocito <br/><span style="color:white;">web developer</span></h2>
 
         <div>
-          <img class="logo" src="./img/logo.code.png" alt="logo">
+          <img id="logo" src="./img/logo.code.png" alt="logo">
         </div>
       </header>
 
-      <div id="arrow_nav">
+      <!-- <div id="arrow_nav">
         <a href="#">
           <svg viewBox="0 0 34 34">
             <path d="M16.99976,1C8.16329,1,1,8.16363,1,17.00005C1,25.83666,8.16328,33,16.99976,33C25.83661,33,33,25.83665,33,17.00005
@@ -69,7 +139,7 @@
           		C23.77582,15.58118,23.74945,15.64545,23.70233,15.6925z"></path>
           </svg>
         </a>
-			</div>
+			</div> -->
 
 
 
@@ -78,7 +148,7 @@
       <!-- <i class='fas fa-arrow-circle-up'></i>
       <i class='fas fa-arrow-circle-down'></i>
       <i class='fas fa-angle-double-up'></i> -->
-      <div class="content">
+
 
         <section id="about">
           <h2>About</h2>
@@ -104,19 +174,26 @@
           <h2>Contact</h2>
         </section>
 
-      </div>
+      </div> <!-- content -->
       <footer>
-      <!-- <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Daniele</a>.
-      </p> -->
-      <!-- <div class="social">
-        <img src="images/iconfinder_instagram_online_social_media_734394.png" alt="">
-        <img src="images/iconfinder_online_social_media_facebook_734386.png" alt="">
-        <img src="images/iconfinder_twitter_online_social_media_734367.png" alt="">
-      </div> -->
-      </footer>
 
-    </div>
+      </footer>
+      <div class="sideContent">
+      </div>  
+    </div> <!-- container -->
+
+
+
+
+    <script>
+function myFunction() {
+  const x = document.getElementById("myTopnav")
+  if (x.className === "topnav") {
+    x.className += " responsive"
+  } else {
+    x.className = "topnav"
+  }
+}
+</script>
   </body>
 </html>
