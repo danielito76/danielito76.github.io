@@ -2,55 +2,205 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <title>Daniele Nocito developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
 
+
+    <div class="topnavContainer">
+      <div class="topnav" id="myTopnav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+    </div>
+
+
+
+
     <div class="container">
-      <!-- <div>Navigation bar</div> -->
+
+
+      <div class="sideContent">
+        <div id="arrow_nav">
+          <a href="#">
+            <svg viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16329,1,1,8.16363,1,17.00005C1,25.83666,8.16328,33,16.99976,33C25.83661,33,33,25.83665,33,17.00005
+                C33,8.16363,25.83661,1,16.99976,1z M23.15434,15.70823l-0.85372,0.87094c-0.04537,0.04536-0.10485,0.06814-0.16452,0.06814
+                c-0.05985,0-0.11953-0.02278-0.16508-0.06814l-4.89215-4.89241l-0.13708-0.13708l-5.02942,5.02949
+                c-0.04367,0.04339-0.10277,0.06814-0.1648,0.06814c-0.06202,0-0.12131-0.02475-0.16508-0.06814l-0.87009-0.85946
+                c-0.0912-0.09082-0.0912-0.23839,0-0.32978l6.05481-6.01543c0.04433-0.04442,0.10597-0.06616,0.16762-0.06513
+                c0.06494-0.00489,0.1312,0.01534,0.18127,0.06513l6.03825,6.00395c0.04367,0.04339,0.06823,0.10287,0.06823,0.16489
+                C23.22256,15.60489,23.19802,15.66456,23.15434,15.70823z M23.15434,22.9999l-0.85372,0.87094
+                c-0.04537,0.04536-0.10485,0.06814-0.16452,0.06814c-0.05985,0-0.11953-0.02278-0.16508-0.06814l-4.89215-4.89241l-0.13708-0.13708
+                l-5.02942,5.02949c-0.04367,0.04339-0.10277,0.06814-0.1648,0.06814c-0.06202,0-0.12131-0.02475-0.16508-0.06814l-0.87009-0.85946
+                c-0.0912-0.09082-0.0912-0.23839,0-0.32978l6.05481-6.01543c0.04433-0.04442,0.10597-0.06616,0.16762-0.06513
+                c0.06494-0.00489,0.1312,0.01534,0.18127,0.06513l6.03825,6.00395c0.04367,0.04339,0.06823,0.10287,0.06823,0.16489
+                C23.22256,22.89656,23.19802,22.95623,23.15434,22.9999z"></path>
+            </svg>
+            </a>
+
+          <a id="prev_entry">
+            <svg viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16327,1,1,8.16364,1,17.00006C1,25.83667,8.16327,33,16.99976,33C25.83661,33,33,25.83667,33,17.00006
+                C33,8.16364,25.83661,1,16.99976,1z M23.70233,15.6925l-0.91974,0.93835c-0.04889,0.04883-0.11292,0.07336-0.17725,0.07336
+                c-0.06445,0-0.12878-0.02454-0.17786-0.07336l-4.39276-4.39307v12.96448h-2.01465V12.20123l-4.4295,4.42963
+                c-0.04706,0.04669-0.11072,0.07336-0.17755,0.07336s-0.13074-0.02667-0.17786-0.07336l-0.93744-0.92596
+                c-0.09821-0.09784-0.09821-0.25684,0-0.35535l6.52332-6.48077c0.04773-0.04785,0.1142-0.07129,0.1806-0.07019
+                c0.06995-0.00525,0.14136,0.01648,0.19531,0.07019l6.50537,6.46844c0.04712,0.04675,0.07361,0.11084,0.07361,0.17767
+                C23.77582,15.58118,23.74945,15.64545,23.70233,15.6925z"></path>
+            </svg>
+          </a>
+
+          <a id="next_entry">
+            <svg class="next_entry" viewBox="0 0 34 34">
+              <path d="M16.99976,1C8.16327,1,1,8.16364,1,17.00006C1,25.83667,8.16327,33,16.99976,33C25.83661,33,33,25.83667,33,17.00006
+                C33,8.16364,25.83661,1,16.99976,1z M23.70233,15.6925l-0.91974,0.93835c-0.04889,0.04883-0.11292,0.07336-0.17725,0.07336
+                c-0.06445,0-0.12878-0.02454-0.17786-0.07336l-4.39276-4.39307v12.96448h-2.01465V12.20123l-4.4295,4.42963
+                c-0.04706,0.04669-0.11072,0.07336-0.17755,0.07336s-0.13074-0.02667-0.17786-0.07336l-0.93744-0.92596
+                c-0.09821-0.09784-0.09821-0.25684,0-0.35535l6.52332-6.48077c0.04773-0.04785,0.1142-0.07129,0.1806-0.07019
+                c0.06995-0.00525,0.14136,0.01648,0.19531,0.07019l6.50537,6.46844c0.04712,0.04675,0.07361,0.11084,0.07361,0.17767
+                C23.77582,15.58118,23.74945,15.64545,23.70233,15.6925z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+       <div class="content">
+
       <header>
-        <h1>Daniele Nocito developer portfolio</h1>
+        <h2>Daniele Nocito <br/><span style="color:white;">web developer</span></h2>
+
         <div>
-          <img class="logo" src="./img/logo.code.png" alt="logo">
+          <img id="logo" src="./img/logo.code.png" alt="logo">
         </div>
       </header>
 
 
-      <div class="content">
-        <section class="main-photo">
-          <img class="work_in_progress" src="./img/work_in_progress_1600_c.jpg" alt="Work in progress">
+
+
+        <section id="about">
+          <h2>About</h2>
+          <p>I am Daniele, a junior Developer and an experienced graphic design Manager.
+          I love to learn any science, any matter and that made me strengthen my capabilities both in analysis and synthesis.
+          In my previous positions I have also carried out software engineering projects and at the same time I had professional coding training. I really enjoyed those tasks, therefore I decided to move completely on to web development.
+
+          The General Assembly gave me the opportunity to do that, rapidly and efficiently.
+          After years in communication, I am currently seeking a new challenge within a Developer role where I can hone the languages that I have been taught and learn new ones.
+          </p>
         </section>
 
-        <section class="main-photo">
-          <!-- <img src="./images/illustration-mockups.svg" alt="mockups"> -->
+        <section id="experience">
+          <h2>Experience</h2>
+          <div class="experience">
+
+
+              <div><img src="http://static-assets.generalassemb.ly/logos/generalassembly-open-graph.png" alt="General Assembly Logo"><h3>Software Engineering Immersive</h3><p></p></div>
+
+              <div><img src="http://mberezzatomanerba.it/wp-content/uploads/2016/04/MBE-Logo-Vertical_Negativo-Convertito.png" alt="General Assembly Logo"><h3>Graphic Design Manager</h3><p>Lyons Business services - Mail Boxes Etc Marylebone. London</p></div>
+
+              <div><img src="http://mberezzatomanerba.it/wp-content/uploads/2016/04/MBE-Logo-Vertical_Negativo-Convertito.png" alt="General Assembly Logo"><h3>Shop Manager</h3><p>Marvir Sas Mail Boxes Etc Siena. Italy</p></div>
+
+          </div>
         </section>
 
-        <section class="info-and-contacts">
-          <!-- <h1>Build The Community Your Fans Will Love</h1>
-
-          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-          Create connections with your users as you engage in genuine discussion.</p>
-
-
-
-          <button type="button" name="button">Register</button> -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="container"><i class="devicon-javascript-plain "></i><i class="devicon-atom-original-wordmark "></i><i class="devicon-css3-plain-wordmark "></i><i class="devicon-git-plain-wordmark "></i><i class="devicon-github-plain-wordmark "></i><i class="devicon-html5-plain-wordmark "></i><i class="devicon-heroku-original-wordmark "></i><i class="devicon-mongodb-plain-wordmark "></i><i class="devicon-nodejs-plain-wordmark "></i><i class="devicon-postgresql-plain-wordmark"></i><i class="devicon-react-original-wordmark "></i><i class="devicon-sass-original"></i><i class="devicon-webpack-plain-wordmark "></i></div>
         </section>
 
-      </div>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="projects">
 
+            <div><img height="40" src="./img/mail_recorder_23.49.07.gif" alt="MBE Mail Recorder"><h3>MBE Mail Recorder</h3><a href="https://github.com/danielito76/Project4/blob/master/readme.md" target="_blank">Project Readme</a><br/><a href="https://project4-mailboxes.herokuapp.com/" target="_blank">Project Site</a></div>
+
+            <div><img height="40" src="./img/date_a_base.png" alt="Date-@-Base"><h3>Date-@-Base</h3><a href="https://github.com/danielito76/Project3/blob/master/README.md" target="_blank">Project Readme</a><br/><a href="https://project3-date-a-base.herokuapp.com/#/" target="_blank">Project Site</a></div>
+
+            <div><img height="40" src="./img/the_online_mirror.png" alt="The Mirror Online"><h3>The Mirror Online</h3><a href="https://github.com/danielito76/sei-project-2/blob/master/README.md" target="_blank">Project Readme</a><br/><a href="https://danielito76.github.io/sei-project-2/#/" target="_blank">Project Site</a></div>
+
+            <div><img height="40" src="./img/frogger.gif" alt="Frogger Lobber"><h3>Frogger Lobber</h3><a href="https://github.com/danielito76/frogger/blob/master/readme.md" target="_blank">Project Readme</a><br/><a href="https://danielito76.github.io/frogger/" target="_blank">Project Site</a></div>
+
+        </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+            <div>
+              <div>
+                Hi! Would you like to know more about me? Send me an email or message me on <a class="" href="https://www.linkedin.com/in/daniele-nocito-developer/">LinkedIn</a> I usually reply within 24 hours! I'm currently open to full-time and internship opportunities as a junior web developer.</div>
+            </div>
+              <div>
+                <!-- <div class="aboutMeImage"></div> -->
+                <div class="emailAddressPage">
+                  <a href="https://danielenocito.dev/">
+                    danielenocito.dev
+                    <!-- <i class="fas fa-envelope" data-aos="fade-up" data-aos-duration="1750"></i> -->
+                  </a>
+                  <br>
+                  <a href="https://github.com/danielito76">
+                    github.com/danielito76
+                    <!-- <i class="fab fa-linkedin-in" data-aos="fade-up" data-aos-duration="1750"></i> -->
+                  </a>
+                  <br>
+                  <a href="https://www.linkedin.com/in/daniele-nocito-developer/">
+                    linkedin.com/in/daniele-nocito-developer
+                    <!-- <i class="fab fa-linkedin-in" data-aos="fade-up" data-aos-duration="1750"></i> -->
+                  </a>
+                  <br>
+                  <a href="mailto:danielenocito76@gmail.com">
+                    mailto: danielenocito76@gmail.com
+                    <!-- <i class="fas fa-envelope" data-aos="fade-up" data-aos-duration="1750"></i> -->
+                  </a>
+                  <br>
+                </div>
+                <br>
+              </div>
+        </section>
+
+      </div> <!-- content -->
       <footer>
-      <!-- <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Daniele</a>.
-      </p> -->
-      <!-- <div class="social">
-        <img src="images/iconfinder_instagram_online_social_media_734394.png" alt="">
-        <img src="images/iconfinder_online_social_media_facebook_734386.png" alt="">
-        <img src="images/iconfinder_twitter_online_social_media_734367.png" alt="">
-      </div> -->
-      </footer>
 
-    </div>
+      </footer>
+      <div class="sideContent">
+      </div>
+    </div> <!-- container -->
+
+
+
+
+    <script>
+function myFunction() {
+  const x = document.getElementById("myTopnav")
+  if (x.className === "topnav") {
+    x.className += " responsive"
+  } else {
+    x.className = "topnav"
+  }
+}
+</script>
   </body>
 </html>
