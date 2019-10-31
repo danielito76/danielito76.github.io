@@ -1,14 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-  // function openCloseBurgerMenu() {
-  //   var x = document.getElementById('myLinks')
-  //   if (x.style.display === 'block') {
-  //     x.style.display = 'none'
+
+
+  // test intro
+  // const playFrogEats = document.getElementById('frogEats')
+  // playFrogEats.addEventListener('click', () => {
+  //   if(frogEats.paused) {
+  //     frogEats.play()
   //   } else {
-  //     x.style.display = 'block'
+  //     frogEats.pause()
+  //     frogEats.currentTime = 0
   //   }
-  // }
+  // })
+  // test intro
+
+
 
 
 

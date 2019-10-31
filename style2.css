@@ -1,8 +1,8 @@
 body {
   height: 100%;
+  /* background-color: #dddddd; */
   background-color: #fff;
   font-family: 'Encode Sans Expanded', sans-serif;
-  color: #2F4F4F;
 }
 html {
 	scroll-behavior: smooth;
@@ -13,32 +13,11 @@ html {
 	}
 }
 
-
-/* links */
-/* unvisited link */
-a {
-  text-decoration: none
-}
-
-/* link color */
-a {
-  color: #3b245d;
-}
-
-/* mouse over link */
-a:hover {
-  color: #d3232d;
-}
-
-/* links */
-
-
-
-
 .container {
   display: flex;
   flex-direction: row;
   width: 100%;
+  /* padding: 50px 50px 10px 50px; */
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 0px;
@@ -83,6 +62,7 @@ section h2 {
 
 /* experience section */
 .experience {
+    /* max-height: 600px; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -90,6 +70,7 @@ section h2 {
 }
 @media screen and (max-width: 900px) {
   .experience {
+      /* height: 400px; */
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -148,6 +129,7 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    /* width: 700px; */
     align-items: center;
     justify-content: center;
 }
@@ -184,6 +166,7 @@ text-align: center;
 @media screen and (max-width: 600px) {
   #projects .projects div {
       width: 80%;
+      /* padding: 55px 30px; */
       min-height: 400px;
       max-height: 600px;
       text-align: center;
@@ -255,7 +238,10 @@ text-align: center;
   }
 }
 
-
+/* img {
+  max-width:50%;
+  height:auto;
+} */
 
 h2 {
   text-align: center;
@@ -377,6 +363,7 @@ h2 {
 #arrow_nav {
     height: 114px;
     width: 34px;
+    /* margin: -78px 0 0 200px; */
     position: fixed;
     z-index: 9999;
     top: 50%;
