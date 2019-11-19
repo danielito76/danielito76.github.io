@@ -3,21 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // test intro
-  // const playFrogEats = document.getElementById('frogEats')
-  // playFrogEats.addEventListener('click', () => {
-  //   if(frogEats.paused) {
-  //     frogEats.play()
-  //   } else {
-  //     frogEats.pause()
-  //     frogEats.currentTime = 0
-  //   }
-  // })
-  // test intro
-
-
-
-
 
 
 
