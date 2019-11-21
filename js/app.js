@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
   function goToNextAnchor() {
     const hash = window.location.hash.substr(1)
     if (hash === '') {
