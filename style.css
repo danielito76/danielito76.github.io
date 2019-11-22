@@ -13,6 +13,10 @@ html {
 	}
 }
 
+h2 {
+  text-align: center;
+}
+
 
 /* links */
 /* unvisited link */
@@ -70,12 +74,100 @@ header {
 
 
 
+#logo {
+  width: 40%;
+  height:auto;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* Temporary animation */
+#logo {
+-webkit-animation-name: test2;
+-webkit-animation-duration: 3s;
+/* animation-iteration-count:infinite; */
+animation-fill-mode: forwards;
+}
+@-webkit-keyframes test2 {
+  0%  {margin-left: -200%;}
+  100% {margin-left: 30%;}
+}
+/* Temporary animation */
+
+
+
+@media only screen and (min-width: 600px) {
+  #logo {
+    width: 20%;
+    margin-left: 40%;
+  }
+  /* Temporary animation desktop */
+  #logo {
+  -webkit-animation-name: test2;
+  -webkit-animation-duration: 3s;
+  /* animation-iteration-count:infinite; */
+  animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes test2 {
+    0%  {margin-left: -200%;}
+    100% {margin-left: 40%;}
+  }
+  /* Temporary animation desktop */
+}
+
+
+
+
+
+header h2 {
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+}
+#headerTitle {
+-webkit-animation-name: test1;
+-webkit-animation-duration: 3s; */
+/* animation-iteration-count:infinite; */
+ animation-fill-mode: forwards;
+}
+@-webkit-keyframes test1 {
+  0%  {margin-left: +200%;}
+  100% {margin-left: 35%;}
+}
+
+
+@media only screen and (max-width: 600px) {
+  #headerTitle {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+  /* Temporary animation desktop */
+  #headerTitle {
+  -webkit-animation-name: test1;
+  -webkit-animation-duration: 3s;
+  /* animation-iteration-count:infinite; */
+  animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes test1 {
+    0%  {margin-left: +200%;}
+    100% {margin-left: 30%;}
+  }
+  /* Temporary animation desktop */
+}
+
+
+
+/* originary header */
 /* header {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 } */
+/* originary header */
+
 
 
 section {
@@ -222,6 +314,12 @@ text-align: center;
   text-align: center;
 }
 
+#contact div:last-child {
+  margin-top: 30px;
+}
+
+
+
 /* .aboutMeImage {
     height: 250px;
     width: 250px;
@@ -242,91 +340,6 @@ text-align: center;
 
 /* contact me */
 
-
-
-
-#logo {
-  width: 40%;
-  height:auto;
-  margin-left: 30%;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-/* Temporary animation */
-#logo {
--webkit-animation-name: test2;
--webkit-animation-duration: 3s;
-/* animation-iteration-count:infinite; */
-animation-fill-mode: forwards;
-}
-@-webkit-keyframes test2 {
-  0%  {margin-left: -200%;}
-  100% {margin-left: 30%;}
-}
-/* Temporary animation */
-
-
-
-@media only screen and (min-width: 600px) {
-  #logo {
-    width: 20%;
-    margin-left: 40%;
-  }
-  /* Temporary animation desktop */
-  #logo {
-  -webkit-animation-name: test2;
-  -webkit-animation-duration: 3s;
-  /* animation-iteration-count:infinite; */
-  animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes test2 {
-    0%  {margin-left: -200%;}
-    100% {margin-left: 40%;}
-  }
-  /* Temporary animation desktop */
-}
-
-
-
-
-
-h2 {
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-}
-#headerTitle {
--webkit-animation-name: test1;
--webkit-animation-duration: 3s; */
-/* animation-iteration-count:infinite; */
- animation-fill-mode: forwards;
-}
-@-webkit-keyframes test1 {
-  0%  {margin-left: +200%;}
-  100% {margin-left: 35%;}
-}
-
-
-@media only screen and (max-width: 600px) {
-  #headerTitle {
-    text-align: center;
-    width: 40%;
-    margin-left: 30%;
-  }
-  /* Temporary animation desktop */
-  #headerTitle {
-  -webkit-animation-name: test1;
-  -webkit-animation-duration: 3s;
-  /* animation-iteration-count:infinite; */
-  animation-fill-mode: forwards;
-  }
-  @-webkit-keyframes test1 {
-    0%  {margin-left: +200%;}
-    100% {margin-left: 30%;}
-  }
-  /* Temporary animation desktop */
-}
 
 
 .topnavContainer {
